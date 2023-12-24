@@ -1,0 +1,213 @@
+:root {
+    --dark-color: #19283f;
+    --green-color : #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color : #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0b0c2a;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--green-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--green-color);
+}
+.main-btn {
+    background-color: var(--green-color);
+    color: #EEE;
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+    background-color: var(--green-color);
+    color: #EEE;
+}
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Start Nav */
+.navbar {
+    /* padding-top: 20px;
+    padding-bottom: 30px; */
+    background: #0b0c2a;
+}
+.navbar img {
+    width: 100px;
+}
+.navbar .navbar-nav a {
+    color: #EEE;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: #EEE;
+}
+.navbar .dad {
+    background-color: #e53637;
+}
+.navbar .navbar-nav {
+    margin: auto;
+    gap: 15px;
+}
+.navbar .navbar-nav li {
+    font-weight: bold;
+    padding: 10px 18px;
+    font-size: 14px;
+}
+.navbar .dropdown-menu {
+    padding: 0;
+    background-color: #FFF;
+}
+.navbar .dropdown-menu li {
+    padding: 0;
+}
+.navbar .dropdown-menu li a {
+    color: #787373;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 16px;
+}
+.navbar .dropdown-menu li a:hover {
+    background-color: #FFF ;
+    border-radius: 7px;
+}
+.navbar form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #EEE;
+    transition: 0.3s;
+    width: 200px;
+}
+.navbar form input:focus {
+    outline: none;
+    border-color: #EEE;
+    background-color: transparent;
+    box-shadow: none;
+    color: #EEE;
+}
+.navbar form input::placeholder {
+    color: #EEE;
+}
+.navbar .navbar-toggler {
+    background-color: #EEE;
+}
+/* End Nav */
+/* Star Landing */
+.landing {
+    height: 300px;
+    background-image: url("../imgs/normal-breadcrumb.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.landing .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.landing .text p {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* End Landing */
+/* Start photo */
+.photo {
+    margin-bottom: 20px;
+}
+.photo img {
+    min-width: 100%;
+}
+.photo span {
+    bottom: 100px;
+    color: #EEE;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 13px;
+}
+.photo h2 {
+    bottom: 22px;
+    color: #EEE;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    margin-top: 10px;
+    width: 90%;
+}
+.photo .up span {
+    bottom: 100px;
+    color: #EEE;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 13px;
+}
+.photo .up h2 {
+    bottom: 22px;
+    color: #EEE;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 21px;
+    margin-top: 10px;
+    width: 90%;
+}
+/* End photo */
+/* Start Footer */
+.footer {
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+.footer .img {
+    margin-bottom: 20px;
+}
+.footer .lists ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.footer .lists {
+    margin-bottom: 5px;
+}
+.footer .lists ul li a {
+    color: #EEE;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.footer .copy p {
+    color: #EEE;
+    opacity: 0.5;
+}
+@media (max-width: 991px) {
+.footer .img {
+    text-align: center;
+}
+}
+/* End Footer */

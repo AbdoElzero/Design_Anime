@@ -1,0 +1,299 @@
+:root {
+    --dark-color: #19283f;
+    --green-color : #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color : #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0b0c2a;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--green-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--green-color);
+}
+.main-btn {
+    background-color: var(--green-color);
+    color: #EEE;
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+    background-color: var(--green-color);
+    color: #EEE;
+}
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Start Nav */
+.navbar {
+    /* padding-top: 20px;
+    padding-bottom: 30px; */
+    background: #0b0c2a;
+}
+.navbar img {
+    width: 100px;
+}
+.navbar .navbar-nav a {
+    color: #EEE;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: #EEE;
+}
+.navbar .dad {
+    background-color: #e53637;
+}
+.navbar .navbar-nav {
+    margin: auto;
+    gap: 15px;
+}
+.navbar .navbar-nav li {
+    font-weight: bold;
+    padding: 10px 18px;
+    font-size: 14px;
+}
+.navbar .dropdown-menu {
+    padding: 0;
+    background-color: #FFF;
+}
+.navbar .dropdown-menu li {
+    padding: 0;
+}
+.navbar .dropdown-menu li a {
+    color: #787373;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 16px;
+}
+.navbar .dropdown-menu li a:hover {
+    background-color: #FFF ;
+    border-radius: 7px;
+}
+.navbar form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #EEE;
+    transition: 0.3s;
+    width: 200px;
+}
+.navbar form input:focus {
+    outline: none;
+    border-color: #EEE;
+    background-color: transparent;
+    box-shadow: none;
+    color: #EEE;
+}
+.navbar form input::placeholder {
+    color: #EEE;
+}
+.navbar .navbar-toggler {
+    background-color: #EEE;
+}
+/* End Nav */
+/* Star Landing */
+.landing {
+    height: 300px;
+    background-image: url("../imgs/normal-breadcrumb.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #EEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.landing .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.landing .text p {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* End Landing */
+/* Start Body */
+.sign {
+    margin-bottom: 30px;
+}
+.sign .left h2,
+.sign .right h2 {
+    color: #EEE;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+}
+.sign .left .sign-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sign .left .sign-1 svg {
+    border-right: 1px solid gray;
+    padding: 14px 14px;
+    background-color: white;
+    width: 30px;
+    height: 16px;
+    color: gray
+}
+.sign .left .sign-1 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+.sign .left .sign-1 input:focus::placeholder {
+    opacity: 0;
+    transition: 0.3s;
+}
+.sign .left .sign-1 > a {
+    text-decoration: none;
+    background-color: #ff3150;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    padding: 10px 24px;
+    border-radius: 4px;
+    color: #EEE;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+}
+.sign .left .sign-1 p {
+    color: #EEE;
+}
+.sign .left .sign-1 p a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ff3150;
+}
+.sign .left .two {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.sign .left .two a {
+    text-decoration: none;
+    background-color: #e53637;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: #EEE;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+}
+.sign .left .two p {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sign .left .two p.one {
+    cursor: progress;
+}
+.sign .right .sign-2 {
+    margin-bottom: 20px;
+}
+.sign .right .sign-2 a {
+    width: fit-content;
+    display: block;
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sign .right .sign-2 a.a-1 {
+    background-color: #e53637;
+}
+.login {
+    margin-bottom: 60px;
+}
+.login .right h6 {
+    text-align: center;
+    color: #EEE;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+}
+.login .right .sign-2 {
+    margin-bottom: 20px;
+}
+.login .right .sign-2 a {
+    width: 100%;
+    display: block;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.login .right .sign-2 a.a-1 {
+    background-color: #3b5998;
+}
+.login .right .sign-2 a.a-2 {
+    background-color: #ca2027;
+}
+.login .right .sign-2 a.a-3 {
+    background-color: #0372b1;
+}
+.login .right .sign-2 a svg {
+    margin-right: 10px;
+}
+/* End Body */
+/* Start Footer */
+.footer {
+    margin-bottom: 30px;
+}
+.footer .img {
+    margin-bottom: 20px;
+}
+.footer .lists ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.footer .lists {
+    margin-bottom: 5px;
+}
+.footer .lists ul li a {
+    color: #EEE;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.footer .copy p {
+    color: #EEE;
+    opacity: 0.5;
+}
+@media (max-width: 991px) {
+.footer .img {
+    text-align: center;
+}
+}
+/* End Footer */
